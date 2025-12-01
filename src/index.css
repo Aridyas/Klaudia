@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'h2font';
+  src: url('./fonts/RobotoSlab-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'pfont';
+  src: url('./fonts/OpenSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'qfont';
+  src: url('./fonts/PlayfairDisplay-Italic.woff') format('woff');
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+:root{
+  scroll-behavior: smooth;
+
+  --background-color: #080f16;
+  --secbackground-color: #020507;
+  --secondary-color: #152231;
+  --filler-color: #273a4a;
+  --glow-color: #1e4f8e;
+
+  --main-text: #ffff;
+  --second-text: #b8cac7;
+  --ghost-text: #67798d;
+  --light-ghost: #7c889b;
+  --gradient-main: linear-gradient(135deg, #0c1821, #1b2a41, #324a5f);
+  --gradient-neon: linear-gradient(135deg, #56cfe1, #4ea8de, #6930c3);
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: var(--background-color);
+  color: var(--main-text);
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

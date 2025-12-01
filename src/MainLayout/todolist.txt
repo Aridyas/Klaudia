@@ -1,0 +1,33 @@
+//--MAIN SECTION (/)--//
+
+    Hero //wip//
+        animated text, learn more.
+
+    Plan Preview //done//
+        Mini plans, learn more
+
+    Preview //done, tbc//
+        How it work, static, no animation (or tbc)
+
+    FAQ //done, tbc//
+        Just FAQ. Clean, static
+
+    Navbar and footer //done//
+        That's it   
+
+//--PLANS SECTION (/plans)--///
+    Detailed version or Plan Preview //done//
+
+//--Login Page (/login)--//
+    ...A login Page
+
+//--Actual content (/dashboard)--//
+
+    dashboard 
+        Overall preview. Specs, logs, informations, plans, currency
+    VM
+        Actual vm content. Mockup vm by ren'py, mock logs
+    setting
+        settings, themes, account informations
+    currency
+        balance, logs

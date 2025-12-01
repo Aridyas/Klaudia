@@ -1,0 +1,60 @@
+const Plans = [content]    
+
+<div className="flex relative top-[25%] h-[90vh] w-full justify-around m-[2%]">
+    {Plans.map((plan) => (
+        <Card
+          key={plan.id}
+          id={plan.id}
+          className={``w-[23%] h-full ${
+            isActive === 1 ? "ring-2 ring-blue-500" : "" 
+            }`}
+          >
+            <h2>{plan.name}</h2>
+            <p className="text-(--light-ghost)">{plan.desc}</p>
+            <div className="mt-[5%] mb-[5%]">
+                <span className="text-4xl">{plan.price}</span>
+                <span className="text-(--light-ghost)">/month</span>
+            </div>
+            <div>
+                {plan.features.map((f, i) =>
+                    <Checked key={i}>{f}</Checked>
+                )}
+            </div>
+            <Button
+             onClick=(() => setActive(plan.id))
+             className="mt-auto"
+             style={
+                background:
+                    isActive === plan.id
+                    ? var(--gradient-neon)
+                    : var(--background-color)
+             }>
+                {isActive === plan.id ? "Current Plan" : "Select Plan"}
+            </Button>
+        </Card>
+    ))}
+</div>
+
+            
+<div className="flex relative top-[25%] h-[90vh] w-full justify-around m-[2%]">
+    <Card id={1} className={`w-[23%] h-full ${isActive === 1 ? "ring-2 ring-blue-500" : "" }`}>
+        <h2>Free</h2>
+        <p className="text-(--light-ghost)">Perfect for testing and personal use</p>
+        <div className="mt-[5%] mb-[5%]">
+            <span className="text-4xl">$0</span>
+            <span className="text-(--light-ghost)">/month</span>
+        </div>
+        <div className="text-(--light-ghost)">
+            <Checked>1 vCPU core</Checked>
+            <Checked>512MB RAM</Checked>
+            <Checked>10GB SSD Storage</Checked>
+            <Checked>1TB Transfer</Checked>
+            <Checked>Basic Support</Checked>
+            <Checked>Community Access</Checked>
+        </div>
+        <Button onClick={() => setActive(1)} className="mt-auto" style={{background: isActive === 1 ?  "var(--gradient-neon)" : "var(--background-color)"}}>{isActive === 1 ? "Current Plan" : "Select Plan"}</Button>
+    </Card>
+</div>
+
+            <h2 className="flex justify-center items-end text-4xl h-[10vh] text-(--main-text)">Choose Your plan</h2>
+            <h2 className="flex justify-center items-center text-2xl h-[10vh] text-(--ghost-text)">KLAUDIA offered browser-based virtual machine to let you have a virtual computer anytime and anywhere. With optimised system, KLAUDIA succeed on minimalising latency and be able to offer high-end computer experience to you</h2>
