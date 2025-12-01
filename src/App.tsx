@@ -10,7 +10,7 @@ function App() {
     <>
       <ScrollToTop/>
       <Routes>
-        <Route path="/home" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/plans" element={<Plans/>} />
         <Route path="/login" element={<Login/>} />
       </Routes>

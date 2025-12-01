@@ -25,7 +25,7 @@ function Login() {
         event.preventDefault();
 
         if (formData.email === "Admin123" && formData.password === "Admin") {
-            navigate("/home")
+            navigate("/")
         } else {
             alert("Click forgot password")
         }
