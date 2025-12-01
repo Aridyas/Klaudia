@@ -2,8 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./MainLayout/main/Home";
 import Plans from "./MainLayout/plans/Plans";
 import ScrollToTop from "./components/ScrollToTop";
-import TestGround from "./MainLayout/Testground";
-import TempRouter from "./MainLayout/TempRouter";
 import Login from "./LoginPage/Login";
 
 function App() {
